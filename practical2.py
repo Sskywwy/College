@@ -7,10 +7,12 @@ age = 17
 #print('Value surname:', surname, 'Type:', type(surname))
 #print('Value age:', age,'Type:', type(age))
 lst = [a, name, surname, age] # Список змінних
-lst2 = []
-lst3 = []
-lst4 = []
+lst1 = [] #Значення змінних  
+lst2 = [] #Типи змінні
+lst3 = [] #змінні з str
+lst4 = [] # всі інші змінні
 for item in lst:
+     lst1.append(item) #додаю значення змінних в lst1
      lst2.append(type(item)) #додаю типи змінних із lst в lst2
      if item == str:
           lst3.append(item)# якщо змінна типу стр додаю в список lst3
@@ -23,3 +25,4 @@ elif len(lst3) < len(lst4):
 else:
      print('Однакові')
 print (lst2)
+print (lst1)
