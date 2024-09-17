@@ -9,20 +9,23 @@ age = 17
 lst = [a, name, surname, age] # Список змінних
 lst1 = [] #Значення змінних  
 lst2 = [] #Типи змінні
-lst3 = [] #змінні з str
-lst4 = [] # всі інші змінні
+string = [] #змінні з str
+floatt = [] # float
+intt = [] # int
 for item in lst:
      lst1.append(item) #додаю значення змінних в lst1
      lst2.append(type(item)) #додаю типи змінних із lst в lst2
      if item == str:
-          lst3.append(item)# якщо змінна типу стр додаю в список lst3
-     else:
-          lst4.append(item)# якщо ні - lst4
-if len(lst3) > len(lst4):
+          string.append(item)# якщо змінна типу стр додаю в список lst3
+     elif item == int:
+          intt.append(item)
+     elif item == float:
+          floatt.append(item)
+if len(string) > len(floatt) and len(string) > len(intt):
      print('Більше значень із типом str')
-elif len(lst3) < len(lst4):
-     print('Більше значень із типом int')
+elif len(floatt) > len(string) and len(floatt) > len(intt):
+     print('Більше значень із типом float')
 else:
-     print('Однакові')
+     print('Більше значень із типом int')
 print (lst2)
 print (lst1)
