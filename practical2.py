@@ -15,11 +15,11 @@ intt = [] # int
 for item in lst:
      lst1.append(item) #додаю значення змінних в lst1
      lst2.append(type(item)) #додаю типи змінних із lst в lst2
-     if item == str:
+     if type(item) == str:
           string.append(item)# якщо змінна типу стр додаю в список lst3
-     elif item == int:
+     elif type(item) == int:
           intt.append(item)
-     elif item == float:
+     elif type(item) == float:
           floatt.append(item)
 if len(string) > len(floatt) and len(string) > len(intt):
      print('Більше значень із типом str')
