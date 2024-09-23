@@ -1,6 +1,3 @@
-
-
-
 dictionary = { 'name': 'Maxym',
             'age': 17,
             'dict': {'1': 'tipchik',
@@ -11,7 +8,6 @@ dictionary = { 'name': 'Maxym',
             'python': 'piton',
             }
 print(dictionary)
-
 
 type_dict = {}  
 for key, value in dictionary.items():
