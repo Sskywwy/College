@@ -41,7 +41,7 @@ class PlayDota2(Maxym):
         elif self.role() == "sup":
             print("nah tobi bf?")
 
-    def mmr_rank(self, mmr: int):
+    def mmr_rank(self, mmr: int = 1742):
         self._mmr = mmr 
         if mmr < 1000:
             print("Herald")
